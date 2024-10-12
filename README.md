@@ -1,14 +1,13 @@
 
-```markdown
-# Login and Sign-up Page
+Sign-up Page and login page 
 
 This repository contains the source code for a basic login and sign-up page built with HTML, CSS
 
 ## Features
 
-- **Login Page**: Allows users to enter their username and password to log in.
-- **Sign-up Page**: Allows new users to create an account by entering their details like username, email, and password.
-- **Responsive Design**: Pages are fully responsive and optimized for different screen sizes.
+- Login Page: Allows users to enter their username and password to log in.
+- Sign-up Page: Allows new users to create an account by entering their details like username, email, and password.
+- Responsive Design: Pages are fully responsive and optimized for different screen sizes.
 
 ## Live Demo
 
