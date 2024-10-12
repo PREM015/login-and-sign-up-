@@ -19,12 +19,12 @@ You can view the live version of the project [here](https://PREM015.github.io/lo
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/PREM015/your-login-and-sign-up .git
+   git clone https://github.com/PREM015/login-and-sign-up .git
    ```
 
 2. **Navigate to the project directory**:
    ```bash
-   cd your-login-and-sign-up
+   cd login-and-sign-up
    ```
 
 3. **Open the `login.html` file** in your browser to view the login page.
