@@ -1,0 +1,137 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #2b5876, red);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Form Container */
+.form-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transform: translateY(-50px);
+    animation: slideIn 1s ease forwards;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.form-container input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.form-container input:focus {
+    background: rgba(255, 255, 255, 0.6);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.form-container button {
+    padding: 12px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #6a82fb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(106, 130, 251, 0.6);
+}
+
+.form-container button:hover {
+    background-color: #fc5c7d;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(252, 92, 125, 0.6);
+}
+
+.form-container p {
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-container p a {
+    color: #6a82fb;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.form-container p a:hover {
+    color: #fc5c7d;
+    text-shadow: 0 0 10px rgba(252, 92, 125, 0.7);
+}
+
+/* Animations */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+    to {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Input Glowing Effects */
+input:focus {
+    animation: glowInput 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glowInput {
+    from {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+    to {
+        box-shadow: 0 0 15px rgba(255, 255, 255, 1);
+    }
+}
